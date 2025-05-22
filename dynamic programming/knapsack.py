@@ -8,3 +8,6 @@ def solve():
         for w in range(W + 1):
             if i == 0 or w == 0:
                 dp[i][w] = 0
+            elif weight[i - 1] <= w:
+                dp[i][w] = max(value[i - 1] + dp[i - 1][weight[i - 1]], dp[i - 1][w])
+                
