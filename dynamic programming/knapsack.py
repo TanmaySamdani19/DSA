@@ -12,3 +12,5 @@ def solve():
                 dp[i][w] = max(value[i - 1] + dp[i - 1][weight[i - 1]], dp[i - 1][w])
             else:
                 dp[i][w] = dp[i - 1][w]
+
+            return dp[n][w]
