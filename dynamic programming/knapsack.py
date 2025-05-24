@@ -14,3 +14,5 @@ def solve():
                 dp[i][w] = dp[i - 1][w]
 
             return dp[n][w]
+
+print(solve())
