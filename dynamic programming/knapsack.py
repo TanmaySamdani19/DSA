@@ -15,4 +15,4 @@ def solve():
 
             return dp[n][w]
 
-print(solve()) # Output: 65, which is the maximum value that can be obtained with the given weights and values within the weight limit W.
+print(solve()) # Output: 65
