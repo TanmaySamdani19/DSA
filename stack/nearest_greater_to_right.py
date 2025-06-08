@@ -34,3 +34,5 @@ def nearest_greater_to_right(arr):
 
 arr = [4, 5, 2, 10, 8]
 print(nearest_greater_to_right(arr))  # Output: [5, 10, 10, -1, -1]
+# Time Complexity : O(n)  - Each element is pushed and popped from the stack at most once.
+# Space Complexity : O(n) - Stack can grow up to n elements in the worst case.
